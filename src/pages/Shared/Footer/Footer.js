@@ -52,7 +52,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr />
-                <p className="text-center mt-4">&copy; copyright by popular diagn - 2021</p>
+                <p className="text-center mt-4">&copy; copyright by world travel - 2021</p>
             </footer>
         </div>
     );
