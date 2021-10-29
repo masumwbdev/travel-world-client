@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fs-6 fw-bold">
                 <div class="container-fluid">
                     <a class="navbar-brand nav-bar fs-3" href="/home">World <span className="text-primary">Travel</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,11 +47,11 @@ const Header = () => {
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <span className="text-light me-3 mt-2">{user?.displayName}</span>
-                            {/* <img className="photo-url" src={user?.photoURL} alt="" /> */}
+                            <span className=" me-3 mt-2">{user?.displayName}</span>
+                            {/* <img className="photo-url" src={user.photoURL} alt="" /> */}
                             {user?.displayName ?
                                 <button onClick={logOut} className="btn btn-outline-primary btn-sm fw-bold me-2">Logout</button> :
-                                <NavLink to="/login"><button className="btn btn-outline-primary btn-sm fw-bold me-2">Login</button></NavLink>}
+                                <NavLink to="/login"><button className="btn btn-outline-danger btn-sm fw-bold me-2">Login</button></NavLink>}
                         </form>
                     </div>
                 </div>
