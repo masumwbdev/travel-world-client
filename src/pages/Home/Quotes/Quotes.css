@@ -1,0 +1,11 @@
+.quotes{
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+.quotes p{
+    font-size: 26px;
+    text-decoration: italic;
+    padding: 32px 123px;
+    text-align: center;
+    font-style: italic;
+}
