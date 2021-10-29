@@ -37,6 +37,7 @@ const Client = () => {
                     </div>
                 </div>
             </div>
+            <hr />
         </div>
     );
 };
