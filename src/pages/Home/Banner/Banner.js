@@ -19,7 +19,7 @@ const Banner = () => {
                         <div class ="carousel-caption d-none d-md-block">
                         <h1>Corporate Travel</h1>
                         <p className="fs-5 mb-3 mt-3">Want to see how simple corporate travel can be? </p>
-                        <button className="mb-5 btn btn-warning fw-bold">Let us Show You <i class="fas fa-arrow-circle-right"></i></button>
+                        <button className="fs-5 mb-5 btn btn-warning fw-bold">Let us Show You <i class="fas fa-arrow-circle-right"></i></button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -27,7 +27,7 @@ const Banner = () => {
                         <div class ="carousel-caption d-none d-md-block">
                         <h1>Meetings and Events</h1>
                         <p className="fs-5 mb-3 mt-3">Unforgettable events to engage and inspire!</p>
-                        <button className="mb-5 btn btn-warning fw-bold">Let's get planning <i class="fas fa-arrow-circle-right"></i></button>
+                        <button className="mb-5 fs-5 btn btn-warning fw-bold">Let's get planning <i class="fas fa-arrow-circle-right"></i></button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -35,7 +35,7 @@ const Banner = () => {
                         <div class ="carousel-caption d-none d-md-block">
                         <h1>Vacation Travel</h1>
                         <p className="fs-5 mb-3 mt-3">Inspiring destinations within your reach!</p>
-                        <button className="mb-5 btn btn-warning fw-bold">Let's Go <i class="fas fa-arrow-circle-right"></i></button>
+                        <button className="fs-5 mb-5 btn btn-warning fw-bold">Let's Go <i class="fas fa-arrow-circle-right"></i></button>
                         </div>
                     </div>
                 </div>

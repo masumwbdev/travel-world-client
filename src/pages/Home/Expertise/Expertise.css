@@ -1,0 +1,19 @@
+.expertise{
+    background-color: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+    padding: 33px 0px;
+}
+.card-item{
+    color: black;
+}
+.card-expert {
+    background-color: rgb(119, 60, 228);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card-expert:hover{
+    background-color: rgb(178, 47, 190);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}

@@ -1,5 +1,5 @@
 .footer{
-    background-color: #111111;
+    background-color: #4854c2;
     color: white;
     padding: 40px 20px;
     margin-top: 40px;
@@ -10,6 +10,7 @@
 }
 ul li{
     list-style: none;
+    color: white;
 }
 .footer-ancor-link{
     text-decoration: none;
