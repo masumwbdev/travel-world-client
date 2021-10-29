@@ -12,7 +12,7 @@ const Login = () => {
         handleGoogleSignIn()
             .then(result => {
                 history.push(redirect_url)
-                setError()
+                // setError()
             })
     }
     return (
