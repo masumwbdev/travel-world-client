@@ -1,0 +1,9 @@
+.about-container{
+    background-color: rgb(245, 245, 245);
+    padding: 40px 0px;
+}
+.about-container p{
+    font-size: 18px;
+    font-family: tahoma;
+    margin-top: 25px;
+}
