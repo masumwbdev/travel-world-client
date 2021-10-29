@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import AuthProvider from './context/AuthProvider';
 import AddService from './pages/AddService/AddService';
 import Home from './pages/Home/Home/Home';
 import Services from './pages/Home/Services/Services';
@@ -12,6 +13,7 @@ import Header from './pages/Shared/Header/Header';
 function App() {
   return (
     <div>
+      <AuthProvider>
       <Router>
         <Header></Header>
         <Switch>
@@ -36,6 +38,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
+      </AuthProvider>
     </div>
   );
 }

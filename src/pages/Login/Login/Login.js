@@ -1,10 +1,10 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 import './Login.css'
 
 const Login = () => {
-    const { handleGoogleSignIn, setError } = useFirebase();
+    const { handleGoogleSignIn,error, setError } = useAuth();
     const history = useHistory();
     const location = useLocation();
     const redirect_url = location.state?.from || '/home'
@@ -12,7 +12,7 @@ const Login = () => {
         handleGoogleSignIn()
             .then(result => {
                 history.push(redirect_url)
-                // setError()
+                setError(error.message)
             })
     }
     return (
