@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useFirebase from '../../hooks/useFirebase';
 import './Header.css'
 
 const Header = () => {
-    // const { user, logOut } = useAuth();
-    // console.log(user)
+    const { user, logOut } = useFirebase();
+    console.log(user)
 
     return (
         <div>
@@ -45,6 +46,13 @@ const Header = () => {
                                 </NavLink>
                             </li>
                         </ul>
+                        <form class="d-flex">
+                            <span className="text-light me-3 mt-2">{user?.displayName}</span>
+                            {/* <img className="photo-url" src={user?.photoURL} alt="" /> */}
+                            {user?.displayName ?
+                                <button onClick={logOut} className="btn btn-outline-primary btn-sm fw-bold me-2">Logout</button> :
+                                <NavLink to="/login"><button className="btn btn-outline-primary btn-sm fw-bold me-2">Login</button></NavLink>}
+                        </form>
                     </div>
                 </div>
             </nav>
