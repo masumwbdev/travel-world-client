@@ -17,8 +17,8 @@ const Login = () => {
     }
     return (
         <div className="google-button">
-            <h1 className="mb-4 fs-3">Sign in Using <span className="text-primary">Google</span></h1>
-            <button className="google-sign-in" onClick={signInUsingGoogle}><i class="fab fa-google fs-3 me-2 google-sign"></i> Google Sign in</button>
+            <h1 className="mb-4 fs-3">Login Using <span className="text-primary">Google</span></h1>
+            <button className="google-sign-in btn btn-outline-danger" onClick={signInUsingGoogle}><i class="fab fa-google fs-3 me-2 google-sign"></i> Google Login</button>
         </div>
     );
 };

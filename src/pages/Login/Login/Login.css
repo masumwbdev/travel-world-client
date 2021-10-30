@@ -6,17 +6,17 @@
 }
 .google-sign-in{
     border: none;
-    border: 3px solid blue;
-    border-radius: 40px;
-    padding: 6px 30px;
-    background-color: rgba(6, 2, 243, 0.356);
+    border: 3px solid rgb(235, 50, 36);
+    /* border-radius: 40px; */
+    padding: 4px 20px;
+    /* background-color: rgba(2, 18, 243, 0.192); */
     font-size: 22px;
 }
 .google-sign-in:hover{
-    background-color: rgba(94, 62, 211, 0.26);
-    padding: 6px 38px;
-    transition: 0.5s;
+    /* background-color: rgba(94, 62, 211, 0.26); */
+    padding: 4px 24px;
+    transition: 0.2s;
 }
-.google-sign{
+/* .google-sign{
     color: rgb(207, 15, 41);
-}
+} */

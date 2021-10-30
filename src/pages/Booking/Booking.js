@@ -85,7 +85,7 @@ const Booking = () => {
             .then(res => {
                 // console.log(res)
                 if (res.data.insertedId) {
-                    alert('User added successfully');
+                    alert('Congrats!! booking successfully confirmed');
                     reset();
                 }
             })
@@ -108,8 +108,8 @@ const Booking = () => {
                         <input {...register("name", { required: true, maxLength: 20 })} value={user.displayName} />
                         <input {...register("email", { required: true, maxLength: 20 })} value={user.email} />
                         <input {...register("location", { required: true, maxLength: 20 })} placeholder="Your location" />
-                        <input {...register("working", { required: true, maxLength: 20 })} placeholder="Day" />
-                        <input type="price" {...register("price")} placeholder="Total Cost" />
+                        <input {...register("text", { required: true, maxLength: 20 })} placeholder="Your job" />
+                        <input {...register("date")} placeholder="Date" />
                         <input className="submit" type="submit" value="Confirm" />
                     </form>
                 </div>
