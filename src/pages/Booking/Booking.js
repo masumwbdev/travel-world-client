@@ -2,9 +2,11 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
+import useAuth from '../hooks/useAuth';
 import './Booking.css'
 
 const Booking = () => {
+    const {user} = useAuth();
     const [services, setServices] = useState({});
     const { serviceId } = useParams();
 
@@ -38,15 +40,14 @@ const Booking = () => {
                     </div>
                 </div>
                 <div className="booking-container">
-                    <h2 className="text-center">Add a packages</h2>
+                    <h2 className="text-center">Book Now</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <input {...register("name", { required: true, maxLength: 20 })} placeholder="name" />
-                        <input {...register("location", { required: true, maxLength: 20 })} placeholder="Travel Location" />
+                        <input {...register("name", { required: true, maxLength: 20 })} value={user.displayName} />
+                        <input {...register("email", { required: true, maxLength: 20 })} value={user.email} />
+                        <input {...register("location", { required: true, maxLength: 20 })} placeholder="Your location" />
                         <input {...register("working", { required: true, maxLength: 20 })} placeholder="Day" />
                         <input type="price" {...register("price")} placeholder="Total Cost" />
-                        <input {...register("imgURL")} placeholder="Image url" />
-                        <textarea {...register("description")} placeholder="Description" />
-                        <input className="submit" type="submit" />
+                        <input className="submit" type="submit" value="Confirm" />
                     </form>
                 </div>
 
