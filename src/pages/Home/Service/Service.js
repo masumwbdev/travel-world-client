@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
-    const { name, imgURL, price, location, working, reviews, totalReviews } = service;
+    const { _id, name, imgURL, price, location, working, reviews, totalReviews } = service;
     return (
         <div>
             <div>
@@ -24,7 +25,7 @@ const Service = ({ service }) => {
                                     <span className="fs-5 fw-bold price">From $ {price}</span>
                                 </div>
                                 <div className="book-now">
-                                    <button>Book Now <i class="fas fa-cart-plus font-awesome"></i></button>
+                                    <Link to={`/booking/${_id}`}><button>Book Now <i class="fas fa-cart-plus font-awesome"></i></button></Link>
                                 </div>
                             </div>
                         </div>

@@ -23,7 +23,6 @@ const AddService = () => {
                 <input {...register("location", { required: true, maxLength: 20 })} placeholder="Travel Location" />
                 <input {...register("working", { required: true, maxLength: 20 })} placeholder="Day" />
                 <input type="price" {...register("price")} placeholder="Total Cost" />
-                {/* <input type="month" {...register("price")} placeholder="Month" /> */}
                 <input {...register("imgURL")} placeholder="Image url" />
                 <textarea {...register("description")} placeholder="Description" />
                 <input className="submit" type="submit" />
