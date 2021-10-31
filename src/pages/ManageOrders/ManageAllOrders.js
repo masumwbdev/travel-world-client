@@ -1,12 +1,12 @@
-import React from 'react';
-import ManageOrders from './ManageOrders/ManageOrders';
+// import React from 'react';
+// import ManageOrders from './ManageOrders/ManageOrders';
 
-const ManageAllOrders = () => {
-    return (
-        <div>
-            <ManageOrders></ManageOrders>
-        </div>
-    );
-};
+// const ManageAllOrders = () => {
+//     return (
+//         <div>
+//             <ManageOrders></ManageOrders>
+//         </div>
+//     );
+// };
 
-export default ManageAllOrders;
+// export default ManageAllOrders;
