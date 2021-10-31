@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const ManageOrders = () => {
-
     const [orders, setOrders] = useState([]);
-
     useEffect(() => {
         fetch('http://localhost:5000/users')
             .then(res => res.json())
@@ -33,6 +31,7 @@ const ManageOrders = () => {
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 container mx-auto mb-5">
                 {
                     orders.map(order => <div
+                        
                         key={order._id}>
                         <div className="shadow my-5 bg-dark text-light">
                             <div>
@@ -52,5 +51,4 @@ const ManageOrders = () => {
         </div>
     );
 };
-
 export default ManageOrders;

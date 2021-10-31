@@ -11,7 +11,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
 import MyAllOrders from './pages/MyOrders/MyAllOrders';
-import ManageOrders from './pages/ManageOrders/ManageOrders/ManageOrders';
+import ManageOrders from './pages/ManageOrders/ManageOrders';
 
 function App() {
   return (
