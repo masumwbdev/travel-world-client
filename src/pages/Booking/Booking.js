@@ -105,14 +105,14 @@ const Booking = () => {
                 <div className="booking-container">
                     <h2 className="text-center">Book Now</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <input {...register("name", { required: true, maxLength: 100 })} value={user.displayName} />
-                        <input {...register("email", { required: true, maxLength: 100 })} value={user.email} />
-                        <input {...register("title", { required: true, maxLength: 100 })} value={services.name} />
-                        <input {...register("img", { required: true, maxLength: 2000 })} value={services.imgURL} />
+                        <input {...register("name", { required: true, maxLength: 1000 })} value={user.displayName} />
+                        <input {...register("email", { required: true, maxLength: 1000 } )} value={user.email} />
+                        <input {...register("title", { required: true, maxLength: 1000 })} value={services.name} />
+                        <input {...register("img", { required: true, maxLength: 1000 })} value={services.imgURL} />
                         <input {...register("location", { required: true, maxLength: 100 })} placeholder="Where do you live?" />
-                        <input {...register("job", { required: true, maxLength: 100 })}
+                        <input {...register("job", { required: true, maxLength: 1000 })}
                             placeholder="What's your job?" />
-                        <input {...register("date", { required: true, maxLength: 100 })} placeholder="Date" type="date" />
+                        {/* <input {...register("date", { required: true, maxLength: 100 })} placeholder="Date" type="date" /> */}
                         <input className="submit" type="submit" value="Confirm" />
                     </form>
                 </div>

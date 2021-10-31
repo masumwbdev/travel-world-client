@@ -9,6 +9,7 @@ const ManageOrders = () => {
     })
 
     const handleDelete = id => {
+        window.confirm('Do you want to delete?')
         const url = `http://localhost:5000/users/${id}/`
         fetch(url, {
             method: 'DELETE'
@@ -33,8 +34,9 @@ const ManageOrders = () => {
                     orders.map(order => <div
                         
                         key={order._id}>
-                        <div className="shadow my-5 bg-dark text-light">
+                        <div className="shadow my-5 text-center rounded">
                             <div>
+                                <img className="img-fluid" src={order.img} alt="" />
                                 <h4>{order.title}</h4>
                                 <h5>Name: {order.name}</h5>
                                 <p>Email: {order.email}</p>

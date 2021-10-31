@@ -10,8 +10,8 @@ import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import NotFound from './pages/NotFound/NotFound';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
-import MyAllOrders from './pages/MyOrders/MyAllOrders';
 import ManageOrders from './pages/ManageOrders/ManageOrders';
+import MyOrders from './pages/MyOrders/MyOrders';
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
             <ManageOrders></ManageOrders>
           </Route>
           <Route path="/my-orders">
-            <MyAllOrders></MyAllOrders>
+            <MyOrders></MyOrders>
           </Route>
           <PrivateRoute path="/booking/:serviceId">
             <Booking></Booking>

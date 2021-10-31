@@ -21,3 +21,7 @@
 .card-icon-color{
     color: rgba(117, 81, 138, 0.973);
 }
+.service-img{
+    width: 100%;
+    height: 200px;
+}
