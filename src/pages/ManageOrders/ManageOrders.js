@@ -9,7 +9,6 @@ const ManageOrders = () => {
     })
 
     const handleDelete = id => {
-        window.confirm('Do you want to delete?')
         const url = `https://creepy-broomstick-99717.herokuapp.com/users/${id}/`
         fetch(url, {
             method: 'DELETE'
