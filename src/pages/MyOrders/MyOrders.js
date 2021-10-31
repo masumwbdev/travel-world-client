@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react/cjs/react.development';
 import useAuth from '../hooks/useAuth';
+import './MyOrder.css'
 
 const MyOrders = () => {
     const { user } = useAuth();
@@ -14,14 +15,15 @@ const MyOrders = () => {
     }, [email])
     return (
         <div>
+            <h1 className="my-order">My order</h1>
             {
                 myOrders.map(myservice => <div
 
                     key={myservice._id}>
                     <div className="shadow my-5 text-center rounded">
                         <div>
-                            <img src={myservice.img} alt="" />
-                            <h4>{myservice.title}</h4>
+                            {/* <img src={myservice.img} alt="" />
+                            <h4>{myservice.title}</h4> */}
                             {/* <h5>Name: {myservice.name}</h5>
                             <p>Email: {myservice.email}</p>
                             <p>{myservice.location}</p> */}

@@ -45,13 +45,6 @@ const Header = () => {
                                     My Orders
                                 </NavLink>
                             </li>
-                            <li class="nav-item">
-                                <NavLink className="link nav-link"
-                                    to="/contact"
-                                >
-                                    Contact
-                                </NavLink>
-                            </li>
                         </ul>
                         <form class="d-flex">
                             <span className=" me-3 mt-2">{user?.displayName}</span>

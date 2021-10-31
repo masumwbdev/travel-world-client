@@ -10,7 +10,7 @@ const Footer = () => {
                     <div>
                         <h4>World Travel Inc.</h4>
                         <hr className="w-75" />
-                        <p className="px-4">The <span className="text-primary">World Travel Inc.</span> started its journey with the vision of taking the health care services into a new height through providing the most accurate and reliable test results to all its customers and caring the patients at the top of its values.</p>
+                        <p className="px-4">The <span className="text-primary">World Travel Inc.</span> started its journey with the vision of taking the travel services into a new height through providing the most accurate and reliable test results to all its customers and caring the patients at the top of its values.</p>
 
                     </div>
                     <div>
@@ -18,7 +18,7 @@ const Footer = () => {
                         <ul>
                             <li>167/B, Green Road, Mirpore, Dhaka, Bangladesh.</li>
                             <li>58956388 & 58954726</li>
-                            <li>popular@bd.com</li>
+                            <li>travel@bd.com</li>
                             <li>Contact</li>
                         </ul>
 
