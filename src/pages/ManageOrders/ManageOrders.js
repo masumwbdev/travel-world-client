@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react';
 const ManageOrders = () => {
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://creepy-broomstick-99717.herokuapp.com/users')
             .then(res => res.json())
             .then(data => setOrders(data))
     })
 
     const handleDelete = id => {
         window.confirm('Do you want to delete?')
-        const url = `http://localhost:5000/users/${id}/`
+        const url = `https://creepy-broomstick-99717.herokuapp.com/users/${id}/`
         fetch(url, {
             method: 'DELETE'
         })
